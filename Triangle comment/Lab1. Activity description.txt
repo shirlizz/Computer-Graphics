@@ -1,0 +1,14 @@
+Lab 1.
+
+Based on main.js
+
+1. Comment each code line in order to describe what the code is doing. (Upload the file)
+
+
+2. Review
+- Call shaders from separated files
+- Detect errors and display in shaders
+- Primitives available in WebGL (point, lines, triangles, strip_triangle, quad, strip_quad, etc.)
+
+3. Create a 2D object using one or more primitives (square, rectangle, set of triangles, etc.) (Upload the file)
+
