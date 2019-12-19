@@ -1,0 +1,40 @@
+<html class="gr__cs_unm_edu"><head><script id="vertex-shader" type="x-shader/x-vertex">
+
+attribute  vec4 vPosition;
+
+uniform mat4 modelViewMatrix;
+uniform mat4 projectionMatrix;
+attribute vec3 color;
+varying vec3 vColor;
+
+void main() 
+{
+    gl_Position = projectionMatrix*modelViewMatrix*vPosition;
+	vColor = color;
+
+} 
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+
+precision mediump float;
+
+varying vec3 vColor;
+void main() {
+    gl_FragColor = vec4(vColor, 1);
+}
+</script>
+
+<script type="text/javascript" src="webgl-utils.js"></script>
+<script type="text/javascript" src="initShaders.js"></script>
+<script type="text/javascript" src="shadow.js"></script>
+<script type="text/javascript" src="MV.js"></script>
+
+</head><body data-gr-c-s-loaded="true">
+<canvas id="gl-canvas" width="512" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+
+
+
+</body></html>
